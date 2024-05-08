@@ -1,0 +1,19 @@
+let currentIndex = 0;
+const images = ["img/image1.jpg", "img/image2.jpg", "img/image3.jpg"]; // Agrega aquí las rutas de tus imágenes
+
+function showSlide(index) {
+    const carouselImg = document.getElementById("carouselImg");
+    currentIndex = (index + images.length) % images.length; // Para asegurar que el índice esté dentro de los límites del array
+    carouselImg.src = images[currentIndex];
+}
+
+function nextSlide() {
+    showSlide(currentIndex + 1);
+}
+
+function prevSlide() {
+    showSlide(currentIndex - 1);
+}
+
+// Mostrar la primera imagen al cargar la página
+showSlide(currentIndex);
