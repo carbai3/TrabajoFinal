@@ -33,5 +33,11 @@ footer {
     text-align: center;
 }
 
-/* Estilos específicos */
-/* Agrega tus estilos específicos aquí según los requerimientos */
+.carousel-image {
+    width: 50%; /* Ajusta el ancho de la imagen al 100% del contenedor */
+
+    cursor: pointer;/* Cambiar el cursor al pasar sobre la imagen */
+}
+.carousel-container {
+text-align: center;
+} /* Centrar el carrusel */

@@ -3,24 +3,37 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contacto - Diseño de Interiores</title>
+    <title>Contacto - Sitio Web de Diseño de Interiores</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
-        <h1>Contacto</h1>
+        <h1>Sitio Web de Diseño de Interiores</h1>
         <nav>
             <ul>
                 <li><a href="index.html">Inicio</a></li>
+                <li><a href="articulo.html">Artículo</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
             </ul>
         </nav>
     </header>
     <main>
-        <!-- Formulario de contacto aquí -->
+        <h2>Formulario de Contacto</h2>
+        <form id="contactForm" onsubmit="validateForm(event)">
+            <label for="nombre">Nombre:</label><br>
+            <input type="text" id="nombre" name="nombre" required><br><br>
+            <label for="correo">Correo Electrónico:</label><br>
+            <input type="email" id="correo" name="correo" required><br><br>
+            <label for="mensaje">Mensaje:</label><br>
+            <textarea id="mensaje" name="mensaje" rows="4" required></textarea><br><br>
+            <button type="submit">Enviar</button>
+        </form>
+        <div id="messageContainer"></div> <!-- Aquí se mostrará el mensaje de éxito o error -->
     </main>
     <footer>
-        <p><a href="index.html">Volver a la página principal</a></p>
+        <p>&copy; 2024 Sitio Web de Diseño de Interiores</p>
     </footer>
     <script src="script.js"></script>
+    <script src="contacto.js"></script> <!-- Script para la validación del formulario -->
 </body>
 </html>
