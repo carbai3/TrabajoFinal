@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galeria de Imagenes 1</title>
+    <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+    <nav class="nav">
+      <ul class="nav__list">
+        <li class="nav__item">
+          <a href="index.html" class="nav__link">Inicio</a>
+        </li>
+        <li class="nav__item">
+          <a href="articulo.html" class="nav__link">Artículo</a>
+        </li>
+        <li class="nav__item">
+          <a href="/Galeria.html" class="nav__link">Galeria</a>
+        </li>
+        <li class="nav__item">
+          <a href="/Galeria1.html" class="nav__link">Galeria1</a>
+        </li>
+        <li class="nav__item">
+          <a href="contacto.html" class="nav__link">Contacto</a>
+        </li>
+      </ul>
+    </nav>
+
+    <div class="flexbox">
+        <img src="/img/1_baños con ducha.jpg" class="thumbnail" onclick="openModal('/img/1_baños con ducha.jpg')">
+        <img src="/img/2_baños con ducha.jpg" class="thumbnail" onclick="openModal('/img/2_baños con ducha.jpg')">
+        <img src="/img/3_baños con ducha.jpg" class="thumbnail" onclick="openModal('/img/3_baños con ducha.jpg')">
+        <img src="/img/4_baños con ducha.jpg" class="thumbnail" onclick="openModal('/img/4_baños con ducha.jpg')">
+        <img src="/img/5_baños con ducha.jpg" class="thumbnail" onclick="openModal('/img/5_baños con ducha.jpg')">
+        <img src="/img/6_baños con ducha.jpg" class="thumbnail" onclick="openModal('/img/4_baños con ducha.jpg')">
+        <img src="/img/7_baños con ducha.jpg" class="thumbnail" onclick="openModal('/img/4_baños con ducha.jpg')">
+        <img src="/img/8_baños con ducha.jpg" class="thumbnail" onclick="openModal('/img/4_baños con ducha.jpg')">
+        
+    </div>
+
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <img class="modal-content" id="modalImg">
+    </div>
+
+    <script src="/script"></script>
+</body>
+
+</html>

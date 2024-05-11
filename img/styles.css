@@ -4,7 +4,7 @@ body {
     margin: 0;
    
 }
-/* estilo menu barra */
+
 .nav{
     background-color:#48e;
 }
@@ -20,15 +20,37 @@ body {
     padding: 10px;
     background-color: #48e;
 }
-
-.nav__link:hover {
-    background-color:#6af;
-}
-
 .nav__item{
     display: inline-block;
 
 }
+.nav__link:hover {
+    background-color:#6af;
+
+main {
+    padding: 20px;
+}
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.box {
+  
+    margin: 10px;
+    padding: 20px;
+    background-color: #f0f0f0;
+    text-align: center;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
 .carousel-image {
    /* width: 50%; /* Ajusta el ancho de la imagen al 100% del contenedor */
     cursor: pointer;/* Cambiar el cursor al pasar sobre la imagen */
@@ -37,14 +59,8 @@ body {
 .carousel-container {
 text-align: center;
 } /* Centrar el carrusel */
+/* Estilos de la galería */
 
-.box {
-
-    margin: 10px;
-    padding: 20px;
-    background-color: #f0f0f0;
-    text-align: center;
-}
 
 
 /* Estilos del modal */
@@ -77,23 +93,11 @@ text-align: center;
     color: #ffffff;
     cursor: pointer;
 }
-/* Estilos de la galería */
-.gallery {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
 
-.thumbnail {
-    margin: 10px;
-    cursor: pointer;
-    max-width: 300px;
-    height: auto;
-}
 .flexbox{
     display: flex;
-    flex-wrap:wrap;
-    justify-content: center;
+    flex-direction: row;
+    direction: ltr;
 }
 .flex-item {
     width: 180px;
@@ -107,9 +111,16 @@ text-align: center;
     background-color: #d56;
 }
 
-footer {
-    background-color: #333;
-    color: #fff;
-    padding: 20px;
-    text-align: center;
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.thumbnail {
+    margin: 10px;
+    cursor: pointer;
+    max-width: 50px;
+    height: auto;
 }

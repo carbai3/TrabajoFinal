@@ -1,39 +1,65 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Sitio Web de Diseño de Interiores</title>
-    <link rel="stylesheet" href="/styles.css">
-</head>
-<body>
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
     <header>
-        <h1>Sitio Web de Diseño de Interiores</h1>
-        <nav>
-            <ul>
-                <li><a href="index.html">Inicio</a></li>
-                <li><a href="articulo.html">Artículo</a></li>
-                <li><a href="contacto.html">Contacto</a></li>
-            </ul>
-        </nav>
+      <nav class="nav">
+        <ul class="nav__list">
+          <li class="nav__item">
+            <a href="index.html" class="nav__link">Inicio</a>
+          </li>
+          <li class="nav__item">
+            <a href="articulo.html" class="nav__link">Artículo</a>
+          </li>
+          <li class="nav__item">
+            <a href="/Galeria.html" class="nav__link">Galeria</a>
+          </li>
+          <li class="nav__item">
+            <a href="/Galeria1.html" class="nav__link">Galeria1</a>
+          </li>
+          <li class="nav__item">
+            <a href="contacto.html" class="nav__link">Contacto</a>
+          </li>
+          <li class="nav__item">
+            <a href="cajas.html" class="nav__link">Contacto</a>
+          </li>
+        </ul>
+      </nav>
     </header>
+    <h1>Sitio Web de Diseño de Interiores</h1>
     <main>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A deleniti odio laudantium cum! Odio fugiat a, dignissimos quo aliquam, asperiores aspernatur pariatur fuga ex praesentium libero ipsum consequatur. Sapiente, voluptas.
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, optio officiis, perspiciatis reprehenderit corporis quibusdam recusandae, repellendus possimus a id delectus sequi labore quisquam aliquam deleniti sint. Doloremque, animi vel!
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolor omnis mollitia officiis, cum voluptates beatae, a atque ex nesciunt fugiat voluptatibus blanditiis! Cumque, tempore dolorum! Nobis labore harum corporis quidem?
-        
-        </p>
-        <div class="carousel-container">
-            <button id="prevBtn" onclick="prevSlide()">&lt;</button>
-            <img id="carouselImg" class="carousel-image" src="" alt="Carrusel de imágenes">
-            <button id="nextBtn" onclick="nextSlide()">&gt;</button>
-        </div>
-        <p id="rutaImagen"></p> 
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. A deleniti odio
+        laudantium cum! Odio fugiat a, dignissimos quo aliquam, asperiores
+        aspernatur pariatur fuga ex praesentium libero ipsum consequatur.
+        Sapiente, voluptas. Lorem ipsum dolor sit amet consectetur adipisicing
+        elit. Eaque, optio officiis, perspiciatis reprehenderit corporis
+        quibusdam recusandae, repellendus possimus a id delectus sequi labore
+        quisquam aliquam deleniti sint. Doloremque, animi vel! Lorem ipsum dolor
+        sit amet consectetur, adipisicing elit. Dolor omnis mollitia officiis,
+        cum voluptates beatae, a atque ex nesciunt fugiat voluptatibus
+        blanditiis! Cumque, tempore dolorum! Nobis labore harum corporis quidem?
+      </p>
+      <div class="carousel-container">
+        <button id="prevBtn" onclick="prevSlide()">&lt;</button>
+        <img
+          id="carouselImg"
+          class="carousel-image"
+          src=""
+          alt="Carrusel de imágenes"
+        />
+        <button id="nextBtn" onclick="nextSlide()">&gt;</button>
+      </div>
+      <p id="rutaImagen"></p>
     </main>
     <footer>
-        <p>&copy; 2024 Sitio Web de Diseño de Interiores</p>
+      <p>&copy; 2024 Sitio Web de Diseño de Interiores</p>
     </footer>
     <script src="/script"></script>
-</body>
+  </body>
 </html>
-
