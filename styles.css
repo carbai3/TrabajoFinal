@@ -34,9 +34,17 @@ body {
     cursor: pointer;/* Cambiar el cursor al pasar sobre la imagen */
 }
 
-.carousel-container {
+/*.carousel-container {
 text-align: center;
 } /* Centrar el carrusel */
+.carousel-container {
+    width: 100vw; /* 100% del ancho de la ventana */
+    height: auto; /* Ajustar la altura automáticamente */
+}
+#carouselImg {
+    width: 100%; /* 100% del ancho del contenedor */
+    height: auto; /* Ajustar la altura automáticamente */
+}
 
 .box {
 
