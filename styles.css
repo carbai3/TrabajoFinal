@@ -47,10 +47,19 @@ text-align: center;
     
     
     text-align: center;
+    
+    
    
      
 }
 #carouselImg {
+    width: 500px; /* 100% del ancho del contenedor */
+    height: 500px; /* Ajustar la altura automáticamente */
+    border:9px solid #99A88C;
+    
+    
+}
+#nextImg{
     width: 500px; /* 100% del ancho del contenedor */
     height: 500px; /* Ajustar la altura automáticamente */
     border:9px solid #99A88C;
@@ -205,4 +214,13 @@ h2{
 text-align: center;
 
 
+}
+.p-textoinicial{
+    color: #335C67;
+    text-align: justify;
+    font-family: 'Times New Roman', Times, serif;
+    margin: 50px;
+    border-bottom : 4px solid #99A88C;
+    padding: 10px;
+    
 }

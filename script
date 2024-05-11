@@ -3,11 +3,20 @@ let currentIndex = 0;
 
 const images = ["img/2_DISEÑO DE INTERIOR con madera.jpg","img/1_muebles para baños.jpg","img/3_DISEÑO DE INTERIOR MINIMALISTA.jpg"];  // Agrega aquí las rutas de tus imágenes
 
-function showSlide(index) {
+/*function showSlide(index) {
     const carouselImg = document.getElementById("carouselImg");
     currentIndex = (index + images.length) % images.length; // Para asegurar que el índice esté dentro de los límites del array
 
     carouselImg.src = images[currentIndex];
+}*/
+function showSlide(index) {
+    const carouselImg = document.getElementById("carouselImg");
+    const nextImg = document.getElementById("nextImg");
+
+    currentIndex = (index + images.length) % images.length; // Para asegurar que el índice esté dentro de los límites del array
+
+    carouselImg.src = images[currentIndex];
+    nextImg.src = images[(currentIndex + 1) % images.length];
 }
 
 function nextSlide() {
