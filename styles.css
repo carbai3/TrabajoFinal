@@ -6,14 +6,50 @@ body {
     
    
 }
+.bodycontacto{
+    background: #fff9d6;
+    
+}
 
 /* estilo menu barra */
+/*barra contacto*/
+.nav-contacto{
+    background-color:#99A88C;
+    border: 4px solid #335C67 ;
+    
+}
+
+.navcontacto__list{
+    margin: 0;
+    text-align:center;
+    
+
+}
+.navcontacto__link{
+    color: white;
+    text-decoration: none;
+    display: inline-block;
+    padding: 30px;
+    background-color: #99A88C;
+}
+.navcontacto__link:hover {
+    background-color:#99A88C;
+}
+
+.navcontacto__item{
+    display: inline-block;
+    
+
+}
+/*barra principal*/
 .nav{
     background-color:#335C67;
+    
 }
 .nav__list{
     margin: 0;
     text-align:center;
+   
 
 }
 .nav__link{
@@ -172,39 +208,61 @@ textarea {
 }
 
 button[type="submit"] {
-    background-color: #4CAF50;
+    background-color: #335C67;
     color: white;
     padding: 10px 20px;
     border: none;
     border-radius: 4px;
     cursor: pointer;
+    
 }
 
 button[type="submit"]:hover {
-    background-color: #45a049;
+    background-color: #335C67;
+    
 }
 
 /* Estilos para el contenedor de mensajes */
 #contactForm {
-    background-color: rgb(201, 194, 195);
+    background-color: #99A88C;
     margin-top: 20px;
     max-width: 500px;
     text-align: center;
+    margin: auto; 
+    color: #335C67;
+    
+    border: 4PX solid #335C67 ;
+    
 }
 
 #contactForm p {
-    margin: 0;
+    margin: 0px;
     padding: 10px;
+   
+}
+#nombre{
+    border-bottom: 4PX solid #335C67 ;
+    background: #fff9d6;
+}
+#correo{
+    border-bottom: 4PX solid #335C67 ;
+    background: #fff9d6;
+}
+#mensaje{
+    border-bottom: 4PX solid #335C67 ;
+    background: #fff9d6;
 }
 
 #contactForm p.success {
-    background-color: #4CAF50;
-    color: white;
+    background-color: #335C67;
+    color: #335C67;
+    
 }
 
 #contactForm p.error {
     background-color: #f44336;
     color: white;
+    border-bottom: 2PX solid ;
 }
 h1{
     text-align: center;
@@ -223,4 +281,7 @@ text-align: center;
     border-bottom : 4px solid #99A88C;
     padding: 10px;
     
+}
+.maincontacto{
+    margin: 20px;
 }
