@@ -17,7 +17,7 @@ body {
     color: white;
     text-decoration: none;
     display: inline-block;
-    padding: 10px;
+    padding: 30px;
     background-color: #48e;
 }
 
@@ -112,4 +112,74 @@ footer {
     color: #fff;
     padding: 20px;
     text-align: center;
+}
+
+/* Estilos para el formulario de contacto */
+form {
+    margin-top: 20px;
+    text-align: right;
+}
+
+label {
+    padding: 2px;
+    display: block;
+    margin-bottom: 1px;
+    font-size: 25px;
+    text-align: left;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 90%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box; /* Para incluir el padding en el ancho total */
+}
+
+textarea {
+    resize: vertical; /* Permitir redimensionamiento vertical del textarea */
+}
+
+button[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+/* Estilos para el contenedor de mensajes */
+#contactForm {
+    background-color: rgb(201, 194, 195);
+    margin-top: 20px;
+    max-width: 500px;
+    text-align: center;
+}
+
+#contactForm p {
+    margin: 0;
+    padding: 10px;
+}
+
+#contactForm p.success {
+    background-color: #4CAF50;
+    color: white;
+}
+
+#contactForm p.error {
+    background-color: #f44336;
+    color: white;
+}
+h2{
+text-align: center;
+
+
 }
