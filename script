@@ -1,10 +1,12 @@
 let currentIndex = 0;
-const images = ["/img/0_imagen carruzel_1.jpg", "/img/0_imagen carruzel_2.jpg",
- "/img/0_imagen carruzel_3.jpg"]; 
- 
+
+
+const images = ["img/2_DISEÑO DE INTERIOR con madera.jpg","img/1_muebles para baños.jpg","img/3_DISEÑO DE INTERIOR MINIMALISTA.jpg"];  // Agrega aquí las rutas de tus imágenes
+
 function showSlide(index) {
     const carouselImg = document.getElementById("carouselImg");
     currentIndex = (index + images.length) % images.length; // Para asegurar que el índice esté dentro de los límites del array
+
     carouselImg.src = images[currentIndex];
 }
 
@@ -15,58 +17,8 @@ function nextSlide() {
 function prevSlide() {
     showSlide(currentIndex - 1);
 }
-// Evento de clic en la imagen para avanzar al siguiente slide
-document.getElementById("carouselImg").addEventListener("click", nextSlide);
 
 // Mostrar la primera imagen al cargar la página
 showSlide(currentIndex);
-
-function validateForm(event) {
-    event.preventDefault(); // Evitar el envío del formulario
-
-    // Obtener los valores de los campos del formulario
-    const nombre = document.getElementById("nombre").value;
-    const correo = document.getElementById("correo").value;
-    const mensaje = document.getElementById("mensaje").value;
-
-    // Validar los campos del formulario
-    if (nombre.trim() === "" || correo.trim() === "" || mensaje.trim() === "") {
-        showError("Todos los campos son obligatorios.");
-        return;
-    }
-
-    // Validar el formato del correo electrónico utilizando una expresión regular simple
-    const correoRegex = /^\S+@\S+\.\S+$/;
-    if (!correoRegex.test(correo)) {
-        showError("Por favor, ingresa un correo electrónico válido.");
-        return;
-    }
-
-    // Si todos los campos son válidos, mostrar el mensaje de éxito
-    const messageContainer = document.getElementById("messageContainer");
-    messageContainer.innerHTML = "";
-    const successMessage = document.createElement("p");
-    successMessage.textContent = `Gracias, ${nombre}. Tu mensaje ha sido enviado correctamente.`;
-    messageContainer.appendChild(successMessage);
-}
-
-function showError(errorMessage) {
-    const messageContainer = document.getElementById("messageContainer");
-    messageContainer.innerHTML = "";
-    const errorParagraph = document.createElement("p");
-    errorParagraph.textContent = errorMessage;
-    messageContainer.appendChild(errorParagraph);
-}
-// Función para abrir el modal
-function openModal(imageSrc) {
-    var modal = document.getElementById("myModal");
-    var modalImg = document.getElementById("modalImg");
-    modal.style.display = "block";
-    modalImg.src = imageSrc;
-}
-
-// Función para cerrar el modal
-function closeModal() {
-    var modal = document.getElementById("myModal");
-    modal.style.display = "none";
-}
+// Cambiar la imagen cada 5 segundos
+setInterval(nextSlide, 5000); // 5000 milisegundos = 5 segundos

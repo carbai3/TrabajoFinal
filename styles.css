@@ -2,11 +2,14 @@
 body {
     font-family: Arial, sans-serif;
     margin: 0;
+    background-color: #E8E8E8;
+    
    
 }
+
 /* estilo menu barra */
 .nav{
-    background-color:#48e;
+    background-color:#335C67;
 }
 .nav__list{
     margin: 0;
@@ -18,7 +21,7 @@ body {
     text-decoration: none;
     display: inline-block;
     padding: 30px;
-    background-color: #48e;
+    background-color: #335C67;
 }
 
 .nav__link:hover {
@@ -40,10 +43,18 @@ text-align: center;
 .carousel-container {
     width: 100vw; /* 100% del ancho de la ventana */
     height: auto; /* Ajustar la altura automáticamente */
+    padding: center;
+    
+    
+    text-align: center;
+   
+     
 }
 #carouselImg {
-    width: 100%; /* 100% del ancho del contenedor */
-    height: auto; /* Ajustar la altura automáticamente */
+    width: 500px; /* 100% del ancho del contenedor */
+    height: 500px; /* Ajustar la altura automáticamente */
+    border:9px solid #99A88C;
+    
 }
 
 .box {
@@ -185,6 +196,10 @@ button[type="submit"]:hover {
 #contactForm p.error {
     background-color: #f44336;
     color: white;
+}
+h1{
+    text-align: center;
+    color: #99A88C ;
 }
 h2{
 text-align: center;
