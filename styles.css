@@ -3,12 +3,9 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     background-color: #E8E8E8;
-    
-   
 }
 .bodycontacto{
     background: #fff9d6;
-    
 }
 
 /* estilo menu barra */
@@ -16,14 +13,11 @@ body {
 .nav-contacto{
     background-color:#99A88C;
     border: 4px solid #335C67 ;
-    
 }
 
 .navcontacto__list{
     margin: 0;
     text-align:center;
-    
-
 }
 .navcontacto__link{
     color: white;
@@ -38,8 +32,6 @@ body {
 
 .navcontacto__item{
     display: inline-block;
-    
-
 }
 /*barra principal*/
 .nav{
@@ -49,8 +41,6 @@ body {
 .nav__list{
     margin: 0;
     text-align:center;
-   
-
 }
 .nav__link{
     color: white;
@@ -172,6 +162,8 @@ text-align: center;
 }
 
 footer {
+    clear: both; /* Limpiar flotadores */
+    width: 100%; /* Ancho completo */
     background-color: #333;
     color: #fff;
     padding: 20px;
@@ -284,4 +276,28 @@ text-align: center;
 }
 .maincontacto{
     margin: 20px;
+}
+/* pagina articulo*/
+.article {
+    width: 70%; /* Ancho del contenido del artículo */
+    float:right; */
+    margin-right: 1%; /* Margen derecho para separar del elemento de la nota */
+    text-align: justify;
+   
+}
+
+
+.note {
+    width: 25%; /* Ancho del elemento de la nota */
+    background-color: #f2f2f2; 
+    padding: 20px;
+    border: 1px solid #ccc; 
+    border-radius: 5px;
+    text-align: justify;
+    
+}
+
+/* Estilos para los títulos de la nota y del artículo */
+.note h3, .article h2 {
+    margin-top: 0; /* Eliminar margen superior */
 }
