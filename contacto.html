@@ -27,23 +27,41 @@
           </nav>
     
     <main class="maincontacto">
-        
-      <form id="contactForm" onsubmit="validateForm(event)">
-        <h2>FORMULARIO DE CONTACTO</h2>
-        <label for="nombre">Nombre:</label><br>
-        <input type="text" id="nombre" name="nombre" required><br><br>
-        <label for="correo">Correo Electrónico:</label><br>
-        <input type="email" id="correo" name="correo" required><br><br>
-        <label for="mensaje">Mensaje:</label><br>
-        <textarea id="mensaje" name="mensaje" rows="4" required></textarea><br><br>
-        <button type="submit">Enviar</button>
-    </form>
+      <div class="container">
+        <div class="row">
+            <div class="col text-center">
+                <h1>Contactanos</h1>
+            </div>
+        </div>
+    <div class="contenedor-form ">
+        <div class="container">
+           <div class="row">
+               <div class="">
+                <form id="contactForm" onsubmit="return validateForm(event)">
+                  <div class="form-input">
+                      <input type="text" id="nombre" name="nombre" placeholder="Nombre" required>
+                  </div>
+                  <div class="form-input">
+                      <input type="email" id="correo" name="correo" placeholder="Correo electrónico" required>
+                  </div>
+                  <div class="form-input">
+                      <textarea id="mensaje" name="mensaje" placeholder="Tu consulta..." required></textarea>
+                  </div>
+                  <div class="form-input">
+                      <button type="submit" id="enviarBtn" class="btn-enviar mb-2 bg-warning">Enviar consulta</button>
+                  </div>
+              </form>
+               </div>
+              </div>
+          </div>
+      </div>
+     
         <div id="messageContainer"></div> 
     </main>
     <footer>
         <p>&copy; 2024 Sitio Web de Diseño de Interiores</p>
     </footer>
-    <script src="script.js"></script>
-    <script src="contacto.js"></script> <!-- Script para la validación del formulario -->
+    <script src="/script"></script>
+    
 </body>
 </html>

@@ -164,40 +164,6 @@ footer {
     text-align: center;
 }
 
-/* Estilos para el formulario de contacto */
-form {
-    margin-top: 20px;
-    text-align: right;
-}
-
-label {
-    
-    padding: 2px;
-    display: block;
-    margin-bottom: 1px;
-    font-size: 15px;
-    text-align: left;
-}
-input{
-    max-width: 150px;
-    
-}
-input[type="text"],
-input[type="email"],
-textarea {
-        flex: 1; /* Los campos de entrada ocupan el espacio restante */
-        padding: 8px;
-        border: 1px solid #ccc;
-        border-radius: 4px;
-        box-sizing: border-box;
-        margin-left: 10px; /* Espacio entre etiqueta y campo de entrada */
-    
-}
-
-textarea {
-    resize: vertical; /* Permitir redimensionamiento vertical del textarea */
-}
-
 button[type="submit"] {
     background-color: #335C67;
     color: white;
@@ -213,50 +179,6 @@ button[type="submit"]:hover {
     
 }
 
-/* Estilos para el contenedor de mensajes */
-#contactForm {
-    background-color: #99A88C;
-    margin-top: 20px;
-    
-    font-size: 10px;
-    
-    text-align: left;
-      
-    color: #335C67;
-    
-    box-sizing: border-box;
-    border: 2PX solid #335C67 ;
-    padding: 2px; 
-    display: flex;
-    flex-direction: row; 
-    
-}
-
-
-#contactForm p {
-    margin: 0px;
-    padding: 10px;
-   
-}
-#nombre,
-    
-
-#correo,
-
-#mensaje{
-   display: flex;
-   align-items: center;
-   margin-bottom: 10px;
-
-}
-
-
-
-#contactForm p.error {
-    background-color: #f44336;
-    color: white;
-    border-bottom: 2PX solid ;
-}
 h1{
     text-align: center;
     color: #99A88C ;
@@ -275,10 +197,7 @@ text-align: center;
     padding: 10px;
     
 }
-.maincontacto{
-    margin: 20px ;
-    
-}
+
 /* pagina articulo*/
 .article {
     width: 70%; /* Ancho del contenido del artículo */
@@ -309,4 +228,44 @@ text-align: center;
     width: 10%; /* Ancho del selector de galería */
     max-width: 600px; /* Ancho máximo del selector de galería */
     margin: 0 auto; /* Centrar horizontalmente */
+}
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+/* Estilos para los contenedores de los campos de entrada */
+.form-input {
+    margin-bottom: 10px;
+}
+
+/* Estilos para los campos de entrada del formulario */
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    box-sizing: border-box;
+}
+
+/* Estilos para el botón de envío del formulario */
+.btn-enviar {
+    padding: 10px 20px;
+    background-color: #FFD700; /* Color dorado */
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+/* Estilos adicionales */
+.mb-2 {
+    margin-bottom: 20px;
+}
+
+.bg-warning {
+    background-color: #FF6347; /* Color naranja */
 }

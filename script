@@ -61,4 +61,30 @@ function cambiarAmbiente(ambiente) {
         galeria.appendChild(imgElement); // Agregar imagen a la galería
     }
 }
+function validateForm(event) {
+    event.preventDefault(); // Evitar el envío del formulario por defecto
+    
+    var nombre = document.getElementById("nombre").value.trim();
+    var correo = document.getElementById("email").value.trim();
+    var mensaje = document.getElementById("mensaje").value.trim();
+    
+    if (nombre === "" || correo === "" || mensaje === "") {
+        alert("Por favor, complete todos los campos.");
+        return false;
+    }
+    
+    // Validación del formato del correo electrónico
+    var correoRegex = /^\S+@\S+\.\S+$/;
+    if (!correoRegex.test(correo)) {
+        alert("Por favor, ingrese un correo electrónico válido.");
+        return false;
+    }
+    
+    // Otros tipos de validaciones (opcional)
+    
+    // Si todas las validaciones pasan, el formulario se envía
+    alert("Formulario enviado correctamente.");
+    document.getElementById("contactForm").reset(); // Limpiar el formulario después del envío
+    return true;
+}
 
