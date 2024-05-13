@@ -1,47 +1,103 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Galeria de Imagenes</title>
-    <link rel="stylesheet" href="/styles.css">
-</head>
-<body>
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+
+  <body>
     <nav class="nav">
-        <ul class="nav__list">
-          <li class="nav__item">
-            <a href="index.html" class="nav__link">Inicio</a>
-          </li>
-          <li class="nav__item">
-            <a href="articulo.html" class="nav__link">Artículo</a>
-          </li>
-          <li class="nav__item">
-            <a href="/Galeria.html" class="nav__link">Galeria</a>
-          </li>
-        
-          <li class="nav__item">
-            <a href="contacto.html" class="nav__link">Contacto</a>
-          </li>
-        </ul>
-      </nav>
-    <div class="gallery">
-        <img src="/img/1_baños con ducha.jpg" class="thumbnail" onclick="openModal('/img/1_baños con ducha.jpg')">
-        <img src="/img/2_baños con ducha.jpg" class="thumbnail" onclick="openModal('/img/2_baños con ducha.jpg')">
-        <img src="/img/3_baños con ducha.jpg" class="thumbnail" onclick="openModal('/img/3_baños con ducha.jpg')">
-        <img src="/img/4_baños con ducha.jpg" class="thumbnail" onclick="openModal('/img/4_baños con ducha.jpg')">
-        <img src="/img/5_baños con ducha.jpg" class="thumbnail" onclick="openModal('/img/5_baños con ducha.jpg')">
-        <img src="/img/6_baños con ducha.jpg" class="thumbnail" onclick="openModal('/img/4_baños con ducha.jpg')">
-        <img src="/img/7_baños con ducha.jpg" class="thumbnail" onclick="openModal('/img/4_baños con ducha.jpg')">
-        <img src="/img/8_baños con ducha.jpg" class="thumbnail" onclick="openModal('/img/4_baños con ducha.jpg')">
-        
+      <ul class="nav__list">
+        <li class="nav__item">
+          <a href="index.html" class="nav__link">Inicio</a>
+        </li>
+        <li class="nav__item">
+          <a href="articulo.html" class="nav__link">Artículo</a>
+        </li>
+        <li class="nav__item">
+          <a href="/Galeria.html" class="nav__link">Galeria</a>
+        </li>
+
+        <li class="nav__item">
+          <a href="contacto.html" class="nav__link">Contacto</a>
+        </li>
+      </ul>
+    </nav>
+    <!-- Selector de ambientes -->
+    <div class="gallery-selector">
+      <label for="ambiente">Seleccionar ambiente:</gallery-selector-label>
+      <select id="ambiente" onchange="cambiarAmbiente(this.value)">
+        <option value="cocina">Cocina</option>
+        <option value="comedor">Comedor</option>
+        <option value="baño">Baño</option>
+        <option value="dormitorio">Dormitorio</option>
+        <option value="frente de casa">Frente de casa</option>
+      </select>
+    </div>
+       <!-- Galería de imágenes -->
+    <div class="gallery" id="galeria">
+      <img
+        src="/img/Cocina/1_Cocina.jpg"
+        class="thumbnail"
+        onclick="openModal('/img/Cocina/1_Cocina.jpg')"
+      />
+      <img
+        src="/img/Cocina/11_Cocina.jpg"
+        class="thumbnail"
+        onclick="openModal('/img/Cocina/11_Cocina.jpg')"
+      />
+      <img
+        src="/img/Cocina/10_Cocina.jpg"
+        class="thumbnail"
+        onclick="openModal('/img/Cocina/10_Cocina.jpg')"
+      />
+      <img
+        src="/img/Cocina/2_Cocina.jpg"
+        class="thumbnail"
+        onclick="openModal('/img/Cocina/2_Cocina.jpg')"
+      />
+      <img
+        src="/img/Cocina/3_Cocina.jpg"
+        class="thumbnail"
+        onclick="openModal('/img/Cocina/3_Cocina.jpg')"
+      />
+      <img
+        src="/img/Cocina/4_Cocina.jpg"
+        class="thumbnail"
+        onclick="openModal('/img/Cocina/4_Cocina.jpg')"
+      />
+      <img
+        src="/img/Cocina/5_Cocina.jpg"
+        class="thumbnail"
+        onclick="openModal('/img/Cocina/5_Cocina.jpg')"
+      />
+      <img
+        src="/img/Cocina/6_Cocina.jpg"
+        class="thumbnail"
+        onclick="openModal('/img/Cocina/6_Cocina.jpg')"
+      />
+      <img
+      src="/img/Cocina/7_Cocina.jpg"
+      class="thumbnail"
+      onclick="openModal('/img/Cocina/7_Cocina.jpg')"
+    />
+    <img
+    src="/img/Cocina/8_Cocina.jpg"
+    class="thumbnail"
+    onclick="openModal('/img/Cocina/8_Cocina.jpg')"
+  />
     </div>
 
     <!-- The Modal -->
     <div id="myModal" class="modal">
-        <span class="close" onclick="closeModal()">&times;</span>
-        <img class="modal-content" id="modalImg">
+      <span class="close" onclick="closeModal()">&times;</span>
+      <img class="modal-content" id="modalImg" />
     </div>
-
+    <footer>
+      <p>&copy; 2024 Sitio Web de Diseño de Interiores</p>
+  </footer>
     <script src="/script"></script>
-</body>
+  </body>
 </html>

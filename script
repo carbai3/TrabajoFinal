@@ -46,3 +46,19 @@ function closeModal() {
     modal.style.display = "none";
 }
 
+// Función para cambiar las imágenes según el ambiente seleccionado
+function cambiarAmbiente(ambiente) {
+    var galeria = document.getElementById("galeria");
+    galeria.innerHTML = ""; // Limpiar galería actual
+
+    // Obtener las imágenes del ambiente seleccionado
+    for (var i = 1; i <= 10; i++) {
+        var imgSrc = "/img/" + ambiente + "/" + i + "_" + ambiente + ".jpg"; // Ruta de la imagen
+        var imgElement = document.createElement("img"); // Crear elemento de imagen
+        imgElement.src = imgSrc; // Establecer atributo src
+        imgElement.classList.add("thumbnail"); // Agregar clase thumbnail
+        imgElement.onclick = function() { openModal(this.src); }; // Asignar función onclick
+        galeria.appendChild(imgElement); // Agregar imagen a la galería
+    }
+}
+

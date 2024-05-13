@@ -51,7 +51,7 @@ body {
 }
 
 .nav__link:hover {
-    background-color:#6af;
+    background-color:#335C27;
 }
 
 .nav__item{
@@ -95,7 +95,7 @@ text-align: center;
 }
 
 
-/* Estilos del modal */
+/* Estilos del modal en la galeria */
 .modal {
     display: none;
     position: fixed;
@@ -295,3 +295,12 @@ text-align: center;
 .note h3, .article h2 {
     margin-top: 0; /* Eliminar margen superior */
 }
+/* selector de galeria de fotos */
+
+.gallery-selector {
+    width: 10%; /* Ancho del selector de galería */
+    max-width: 600px; /* Ancho máximo del selector de galería */
+    margin: 0 auto; /* Centrar horizontalmente */
+}
+
+
