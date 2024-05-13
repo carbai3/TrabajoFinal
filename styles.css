@@ -12,7 +12,7 @@ body {
 /*barra contacto*/
 .nav-contacto{
     background-color:#99A88C;
-    border: 4px solid #335C67 ;
+   
 }
 
 .navcontacto__list{
@@ -51,7 +51,7 @@ body {
 }
 
 .nav__link:hover {
-    background-color:#335C27;
+    background-color:#99A88C;
 }
 
 .nav__item{
@@ -171,22 +171,27 @@ form {
 }
 
 label {
+    
     padding: 2px;
     display: block;
     margin-bottom: 1px;
-    font-size: 25px;
+    font-size: 15px;
     text-align: left;
 }
-
+input{
+    max-width: 150px;
+    
+}
 input[type="text"],
 input[type="email"],
 textarea {
-    width: 90%;
-    padding: 8px;
-    margin-bottom: 10px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    box-sizing: border-box; /* Para incluir el padding en el ancho total */
+        flex: 1; /* Los campos de entrada ocupan el espacio restante */
+        padding: 8px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+        margin-left: 10px; /* Espacio entre etiqueta y campo de entrada */
+    
 }
 
 textarea {
@@ -212,38 +217,40 @@ button[type="submit"]:hover {
 #contactForm {
     background-color: #99A88C;
     margin-top: 20px;
-    max-width: 500px;
-    text-align: center;
-    margin: auto; 
+    
+    font-size: 10px;
+    
+    text-align: left;
+      
     color: #335C67;
     
-    border: 4PX solid #335C67 ;
+    box-sizing: border-box;
+    border: 2PX solid #335C67 ;
+    padding: 2px; 
+    display: flex;
+    flex-direction: row; 
     
 }
+
 
 #contactForm p {
     margin: 0px;
     padding: 10px;
    
 }
-#nombre{
-    border-bottom: 4PX solid #335C67 ;
-    background: #fff9d6;
-}
-#correo{
-    border-bottom: 4PX solid #335C67 ;
-    background: #fff9d6;
-}
+#nombre,
+    
+
+#correo,
+
 #mensaje{
-    border-bottom: 4PX solid #335C67 ;
-    background: #fff9d6;
+   display: flex;
+   align-items: center;
+   margin-bottom: 10px;
+
 }
 
-#contactForm p.success {
-    background-color: #335C67;
-    color: #335C67;
-    
-}
+
 
 #contactForm p.error {
     background-color: #f44336;
@@ -269,7 +276,8 @@ text-align: center;
     
 }
 .maincontacto{
-    margin: 20px;
+    margin: 20px ;
+    
 }
 /* pagina articulo*/
 .article {
@@ -302,5 +310,3 @@ text-align: center;
     max-width: 600px; /* Ancho máximo del selector de galería */
     margin: 0 auto; /* Centrar horizontalmente */
 }
-
-
