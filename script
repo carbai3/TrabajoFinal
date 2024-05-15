@@ -79,9 +79,8 @@ function validateForm(event) {
         alert("Por favor, ingrese un correo electrónico válido.");
         return false;
     }
-    
-    // Otros tipos de validaciones (opcional)
-    
+   // faltan mas validaciones 
+       
     // Si todas las validaciones pasan, el formulario se envía
     alert("Formulario enviado correctamente.");
     document.getElementById("contactForm").reset(); // Limpiar el formulario después del envío
