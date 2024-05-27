@@ -37,15 +37,15 @@
         <div class="container">
            <div class="row">
                <div class="">
-                <form id="contactForm" onsubmit="return validateForm(event)">
+                <form id="contactForm" onsubmit="return validateForm(event)" novalidate>
                   <div class="form-input">
-                      <input type="text" id="nombre" name="nombre" placeholder="Nombre" required>
+                      <input type="text" id="nombre" name="nombre" placeholder="Nombre" required onblur = "validateNombre()">
                   </div>
                   <div class="form-input">
-                    <input type="email" id="email" name="correo" placeholder="Correo electrónico" required>
+                    <input type="email" id="email" name="correo" placeholder="Correo electrónico" required onblur="validateCorreo()">
                   </div>
                   <div class="form-input">
-                      <textarea id="mensaje" name="mensaje" placeholder="Tu consulta..." required></textarea>
+                      <textarea id="mensaje" name="mensaje" placeholder="Tu consulta..." required novalidate></textarea>
                   </div>
                   <div class="form-input">
                       <button type="submit" id="enviarBtn" class="btn-enviar mb-2 bg-warning">Enviar consulta</button>
