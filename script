@@ -61,29 +61,50 @@ function cambiarAmbiente(ambiente) {
         galeria.appendChild(imgElement); // Agregar imagen a la galería
     }
 }
+
 function validateForm(event) {
     event.preventDefault(); // Evitar el envío del formulario por defecto
     
+    // Obtener valores de los campos
     var nombre = document.getElementById("nombre").value.trim();
     var correo = document.getElementById("email").value.trim();
     var mensaje = document.getElementById("mensaje").value.trim();
     
+    // Validación de campos vacíos
     if (nombre === "" || correo === "" || mensaje === "") {
         alert("Por favor, complete todos los campos.");
         return false;
     }
     
+    // Validación del nombre: no permitir números y longitud máxima de 20 caracteres
+    var nombreRegex = /^[A-Za-z]{1,20}$/;
+    if (!nombreRegex.test(nombre)) {
+        alert("Por favor, ingrese un nombre válido sin números y máximo 20 caracteres.");
+        return false;
+    }
+    
     // Validación del formato del correo electrónico
-    var correoRegex = /^\S+@\S+\.\S+$/;
+    var correoRegex = /^\w+@\w+(\.\w{2,4})+$/;
     if (!correoRegex.test(correo)) {
         alert("Por favor, ingrese un correo electrónico válido.");
         return false;
     }
-   // faltan mas validaciones 
-       
+    
+    // Más validaciones pueden añadirse aquí
+    
     // Si todas las validaciones pasan, el formulario se envía
     alert("Formulario enviado correctamente.");
-    document.getElementById("contactForm").reset(); // Limpiar el formulario después del envío
+    
+    // Mostrar los datos enviados en el HTML
+    var datosEnviados = document.createElement("div");
+    datosEnviados.innerHTML = "<h2>Datos Enviados:</h2>" +
+        "<p><strong>Nombre:</strong> " + nombre + "</p>" +
+        "<p><strong>Correo:</strong> " + correo + "</p>" +
+        "<p><strong>Mensaje:</strong> " + mensaje + "</p>";
+    document.getElementById("datosEnviados").appendChild(datosEnviados);
+    
+    // Limpiar el formulario después del envío
+    document.getElementById("contactForm").reset();
+    
     return true;
 }
-
