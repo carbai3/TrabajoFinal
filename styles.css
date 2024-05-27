@@ -1,6 +1,6 @@
 /* Estilos generales */
 body {
-    font-family: Arial, sans-serif;
+    font-family: sans-serif;
     margin: 0;
     background-color: #E8E8E8;
 }
@@ -191,6 +191,7 @@ text-align: center;
 .p-textoinicial{
     color: #335C67;
     text-align: justify;
+    font-size: 20px;
     font-family: 'Times New Roman', Times, serif;
     margin: 50px;
     border-bottom : 4px solid #99A88C;
@@ -201,12 +202,13 @@ text-align: center;
 /* pagina articulo*/
 
 .article {
-    width: 70%; /* Ancho del contenido del artículo */
-    float:right; */
-    margin-right: 1%; /* Margen derecho para separar del elemento de la nota */
+    width: 50%; /* Ancho del contenido del artículo */
+    float:right; 
+    margin-right: 10%; /* Margen derecho para separar del elemento de la nota */
     text-align: justify;
     display: block;
-   
+    border: 2px solid #ccc;
+    padding: 15px 20px; 
 }
 
 
