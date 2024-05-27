@@ -63,7 +63,7 @@ function cambiarAmbiente(ambiente) {
 }
 
 function validateForm(event) {
-    event.preventDefault(); // Evitar el envío del formulario por defecto
+   event.preventDefault(); // Evitar el envío del formulario por defecto
     
     // Obtener valores de los campos
     var nombre = document.getElementById("nombre").value.trim();
@@ -90,7 +90,7 @@ function validateForm(event) {
         return false;
     }
     
-    // Más validaciones pueden añadirse aquí
+    
     
     // Si todas las validaciones pasan, el formulario se envía
     alert("Formulario enviado correctamente.");
