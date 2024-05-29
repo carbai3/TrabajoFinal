@@ -56,7 +56,7 @@ function cambiarAmbiente(ambiente) {
 
     // Obtener las imágenes del ambiente seleccionado
     for (var i = 1; i <= 10; i++) {
-        var imgSrc = "img/" + ambiente + "/" + i + "_" + ambiente + ".jpg"; // Ruta de la imagen
+        var imgSrc = "/img" + ambiente + "/" + i + "_" + ambiente + ".jpg"; // Ruta de la imagen
         var imgElement = document.createElement("img"); // Crear elemento de imagen
         imgElement.src = imgSrc; // Establecer atributo src
         imgElement.classList.add("thumbnail"); // Agregar clase thumbnail
